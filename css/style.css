@@ -453,9 +453,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
+  position: relative;
   left: 12px;
-  width: 68px;
+  min-width: 68px;
   min-height: 27px;
   padding: 6px 16px 4px 23px;
   color: #3c52c9;
@@ -469,15 +469,19 @@ a {
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0465919); }
   .administration__back::before {
     position: absolute;
-    top: 6px;
+    top: 50%;
     left: 10px;
     content: "";
     width: 6px;
     height: 10px;
+    margin: -5px;
     background-image: url("../img/back-arrow.svg"); }
 
 .administration__title {
+  width: 75%;
   margin: 0 auto;
+  text-align: center;
+  vertical-align: center;
   color: #6b7dea;
   font-size: 16px;
   font-weight: 700;

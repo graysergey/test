@@ -495,7 +495,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 97%;
   min-height: 44px;
   margin-bottom: 25px;
   margin-left: 19px; }
@@ -507,7 +507,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 94%; }
+  width: 100%; }
 
 .bar__search {
   width: 277px;
@@ -564,6 +564,7 @@ a {
   min-width: 108px;
   max-width: 400px;
   margin-left: auto;
+  margin-right: 3%;
   padding: 10px 10px 5px 10px;
   color: #ffffff;
   font-size: 18px;

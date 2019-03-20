@@ -507,7 +507,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%; }
+  width: 94%; }
 
 .bar__search {
   width: 277px;
@@ -564,7 +564,6 @@ a {
   min-width: 108px;
   max-width: 400px;
   margin-left: auto;
-  margin-right: 6%;
   padding: 10px 10px 5px 10px;
   color: #ffffff;
   font-size: 18px;
@@ -579,12 +578,12 @@ a {
     cursor: pointer; }
 
 .list {
-  width: 100%;
+  width: 95.3%;
   min-height: 539px;
   margin-left: 13px; }
 
 .list__table {
-  width: 95.3%;
+  width: 100%;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -630,10 +629,11 @@ a {
         text-align: end; }
       .list__table tr td:nth-of-type(7),
       .list__table tr th:nth-of-type(7) {
-        padding-right: 63px;
+        padding-right: 6%;
         text-align: end; }
       .list__table tr td:last-of-type,
       .list__table tr th:last-of-type {
+        position: relative;
         width: 200px; }
 
 .list__header {
@@ -667,17 +667,14 @@ a {
   .list__status-connection--on {
     background-color: #86ee82; }
 
-.list__actions {
-  position: relative; }
-  .list__actions::before {
-    position: absolute;
-    top: -11px;
-    left: -44px;
-    content: "";
-    width: 25px;
-    height: 25px;
-    background-image: url("../img/actions.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: #ffffff;
-    border-radius: 50%; }
+.list__actions::before {
+  position: absolute;
+  right: 52%;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/actions.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #ffffff;
+  border-radius: 50%; }

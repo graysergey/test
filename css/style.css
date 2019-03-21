@@ -668,14 +668,16 @@ a {
   .list__status-connection--on {
     background-color: #86ee82; }
 
-.list__actions::before {
-  position: absolute;
-  right: 52%;
-  content: "";
+.list__info {
+  display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url("../img/actions.svg");
+  margin-right: 14%;
+  background-image: url("../img/three-point.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #ffffff;
   border-radius: 50%; }
+
+.list__edit {
+  display: inline-block; }

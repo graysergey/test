@@ -592,16 +592,15 @@ a {
   border-radius: 3px 3px;
   -webkit-box-shadow: 0 8px 3px #eaebef;
           box-shadow: 0 8px 3px #eaebef; }
+  .list__table .list__status-title {
+    padding-right: 10px;
+    text-align: end; }
   .list__table tr:nth-of-type(2n+3) {
     background-color: #fafbff; }
   .list__table tr {
     height: 59px; }
     .list__table tr:nth-of-type(2) {
       height: 70px; }
-      .list__table tr:nth-of-type(2) td {
-        padding-top: 11px; }
-      .list__table tr:nth-of-type(2) td:nth-of-type(5) {
-        padding-top: 30px; }
     .list__table tr td,
     .list__table tr th {
       width: 135px;
@@ -618,9 +617,9 @@ a {
       .list__table tr td:nth-of-type(4),
       .list__table tr th:nth-of-type(4) {
         padding-left: 26px; }
-      .list__table tr td:nth-of-type(5),
-      .list__table tr th:nth-of-type(5) {
-        padding-right: 10px;
+      .list__table tr td:nth-of-type(5):not(.list__status-title),
+      .list__table tr th:nth-of-type(5):not(.list__status-title) {
+        padding-right: 35px;
         text-align: end; }
       .list__table tr td:nth-of-type(6),
       .list__table tr th:nth-of-type(6) {
@@ -644,27 +643,22 @@ a {
   text-transform: uppercase; }
 
 .list__connection {
-  display: inline-block;
-  min-height: 59px;
-  padding-top: 21px; }
-  .list__connection--connected {
+  position: relative; }
+  .list__connection::after {
+    position: absolute;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    content: "";
+    border-radius: 50%; }
+  .list__connection--on {
     color: #86ee82; }
-  .list__connection--disconnected {
+    .list__connection--on::after {
+      background-color: #86ee82; }
+  .list__connection--off {
     color: #ff5867; }
-
-.list__status-connection {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin-right: 2px;
-  margin-left: 13px;
-  background-color: inherit;
-  border-radius: 50%; }
-  .list__status-connection--of {
-    margin-left: 6px;
-    background-color: #ff5867; }
-  .list__status-connection--on {
-    background-color: #86ee82; }
+    .list__connection--off::after {
+      background-color: #ff5867; }
 
 .list__info {
   display: inline-block;

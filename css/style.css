@@ -530,7 +530,7 @@ a {
   .actions-bar__search::placeholder {
     color: rgba(0, 0, 0, 0.137596); }
 
-.actions-bar__label {
+.actions-bar__search-wrap {
   position: relative;
   width: 27%;
   min-width: 277px; }
